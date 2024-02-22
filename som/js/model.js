@@ -17,8 +17,6 @@ export default class Model {
         } else {
             this.currentId = this.tasks[this.tasks.length - 1].id + 1;
         }
-        console.log(this.tasks.length);
-        console.log(this.tasks);
     }
 
     setView(view) {
@@ -42,7 +40,6 @@ export default class Model {
         const task = this.tasks[index];
         task.completed = !task.completed;
         this.save();
-        console.log(task);
     }
 
     editTask(id, values) {

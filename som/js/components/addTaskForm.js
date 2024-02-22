@@ -19,7 +19,7 @@ export default class AddTask {
     onClick(callback) {
         this.btn.onclick = () => {
             if (this.title.value === '' || this.description.value === '') {
-                console.log('aaaa');
+                alert('give title and description please');
             } else {
                 callback(this.title.value, this.description.value);
             }
